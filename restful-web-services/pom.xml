@@ -56,16 +56,21 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-<configuration>
-  <to>
-    <image>gcr.io/burner-keskumar5/spring-rest-demo</image>
-  </to>
-  <container>
-    <format>OCI</format>
-  </container>
-</configuration>
 	<build>
 		<plugins>
+			 <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>3.4.4</version>
+               <configuration>
+ 		 <to>
+   		 <image>gcr.io/burner-keskumar5/spring-rest-demo</image>
+  			</to>
+  			<container>
+    			<format>OCI</format>
+  				</container>
+		</configuration>
+            </plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
