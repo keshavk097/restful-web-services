@@ -64,7 +64,7 @@
                 <version>3.4.4</version>
                <configuration>
  		 <to>
-   		 <image>asia.gcr.io/burner-keskumar5/spring-rest-demo</image>
+   		 <image>us.gcr.io/burner-keskumar5/spring-rest-demo</image>
   			</to>
   			<container>
     			<format>OCI</format>
